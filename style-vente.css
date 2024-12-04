@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(245, 245, 245);
+    color: rgb(40, 40, 40);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(117, 131, 37);
+}
+
+/* Menu Burger */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #0f12e5;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 120px;
+    height: 100vh;
+    background: #212652;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: left 0.3s;
+    z-index: 999;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-toggle:checked ~ .menu {
+    left: 0;
+}
+
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+
+.bar {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #333;
+    transition: 0.4s;
+}
+
+.bar1 { top: 0; }
+.bar2 { top: 8px; }
+.bar3 { top: 16px; }
+
+.menu-toggle:checked + .menu-icon .bar1 {
+    transform: rotate(45deg);
+    top: 8px;
+    background-color: white;
+}
+
+.menu-toggle:checked + .menu-icon .bar2 {
+    opacity: 0;
+}
+
+.menu-toggle:checked + .menu-icon .bar3 {
+    transform: rotate(-45deg);
+    top: 8px;
+    background-color: white;
+}
+
+/* Style for the menu itself */
+.menu {
+    display: none; /* Hide the menu by default */
+}
+
+.menu-toggle:checked ~ .menu {
+    display: block; /* Show the menu when checked */
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: rgb(15, 76, 129);
+}
+
+h2 {
+    color: rgb(180, 60, 80);
+}
+/* footer */
+footer {
+    color: rgb(12, 12, 12);
+    text-align: center;
+    padding: 0.5rem;
+    z-index: -1;
+}

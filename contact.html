@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Site Marin</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="page-contact">
+    <!-- Menu Burger -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+    </label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="Contact">
+        <h2>Formulaire de Contact</h2>
+        <form>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+             <!-- Case à cocher pour accepter les politiques -->
+        <div class="checkbox-container">
+            <input type="checkbox" id="accept-policies" name="accept-policies" required>
+            <label for="accept-policies">
+                J'accepte les <a href="/confidentialite.html">politiques de confidentialité</a> et les <a href="/vente.html">modalités de vente</a>.
+            </label>
+        </div>
+        
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+</div>
+    </main>
+    <div class="seaweed">
+        <div class="seaweed-1"></div>
+        <div class="seaweed-2"></div>
+    </div>
+    <footer>
+        <p>tabbrat &copy; 2024 Site Marin</p>
+    </footer>
+    <script src="/scrip.js"></script>
+</body>
+</html>
